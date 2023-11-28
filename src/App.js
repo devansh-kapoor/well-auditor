@@ -143,9 +143,9 @@ const App = () => {
     <div className="App">
       <div className='background'>
       </div>
-      <div style={{display:"flex", flexDirection:"row"}}>
-        <div className='sideTab'>
-        {/* <h1 className="pillar-title">pillar</h1> */}
+      {currentPillarIndex < pillarsData.length && !showResult ? (
+        <div style={{display:"flex", flexDirection:"row"}}>
+          <div className='sideTab'>
           {pillarsData.map((item,index)=>(
             <div>
             <div className='pillarTab' onClick={()=> onChangePillar(index)}>
@@ -154,7 +154,6 @@ const App = () => {
             </div>
           ))}
         </div>
-      {currentPillarIndex < pillarsData.length && !showResult ? (
         <div className="questionnaire">
           <h1 className="pillar-title">{pillarsData[currentPillarIndex].title}</h1>
           {pillarsData[currentPillarIndex].questions.map((question, questionIndex) => (
@@ -197,6 +196,7 @@ const App = () => {
             </button>
           </div>
         </div>
+        </div>
         
       ) : null}
       </div>
@@ -208,7 +208,6 @@ const App = () => {
           </div>
         </div>
       ) : null}
-    </div>
     <Footer/>
     </>
   );
