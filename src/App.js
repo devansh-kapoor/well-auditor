@@ -29,6 +29,28 @@ const App = () => {
             { answerText: 'Excellent', score: 5 },
           ],
         },
+        {
+          questionText: 'How do you plan your projects?',
+          answers: [
+            // { answerText: 'No', score: 0 },
+            { answerText: 'Poor', score: 1 },
+            { answerText: 'Fair', score: 2 },
+            { answerText: 'Good', score: 3 },
+            { answerText: 'Very Good', score: 4 },
+            { answerText: 'Excellent', score: 5 },
+          ],
+        },
+        {
+          questionText: 'How do you plan your projects?',
+          answers: [
+            // { answerText: 'No', score: 0 },
+            { answerText: 'Poor', score: 1 },
+            { answerText: 'Fair', score: 2 },
+            { answerText: 'Good', score: 3 },
+            { answerText: 'Very Good', score: 4 },
+            { answerText: 'Excellent', score: 5 },
+          ],
+        },
 
 
         // Add more questions for Pillar 1...
@@ -37,6 +59,28 @@ const App = () => {
     {
       title: 'Pillar 2',
       questions: [
+        {
+          questionText: 'How do you handle conflicts?',
+          answers: [
+            // { answerText: 'No', score: 0 },
+            { answerText: 'Avoid conflicts', score: 1 },
+            { answerText: 'Handle moderately', score: 2 },
+            { answerText: 'Resolve effectively', score: 3 },
+            { answerText: 'Proactively address', score: 4 },
+            { answerText: 'Excellent conflict resolution', score: 5 },
+          ],
+        },
+        {
+          questionText: 'How do you handle conflicts?',
+          answers: [
+            // { answerText: 'No', score: 0 },
+            { answerText: 'Avoid conflicts', score: 1 },
+            { answerText: 'Handle moderately', score: 2 },
+            { answerText: 'Resolve effectively', score: 3 },
+            { answerText: 'Proactively address', score: 4 },
+            { answerText: 'Excellent conflict resolution', score: 5 },
+          ],
+        },
         {
           questionText: 'How do you handle conflicts?',
           answers: [
@@ -141,8 +185,10 @@ const App = () => {
       ) : null}
       {showResult ? (
         <div className="result">
+          <div style={{marginTop:"-20rem"}}>
           <h2>Assessment Completed</h2>
           <p>Your total score is: {totalScore}</p>
+          </div>
         </div>
       ) : null}
     </div>

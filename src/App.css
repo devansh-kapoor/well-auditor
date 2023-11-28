@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 50rem;
+  height: auto;
   background-color: #f4f4f4;
 }
 .headerTop {
@@ -50,7 +50,8 @@ body {
   /* Increased width */
   width: 50%;
   z-index: 1;
-  margin-top: 12rem;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
 }
 
 .pillar-title {
@@ -64,8 +65,8 @@ body {
 }
 
 .question {
-  margin-bottom: 40px;
-  height: 0px;
+  margin-bottom: 15rem;
+  /* height: 0px; */
 }
 
 .question h3 {
@@ -128,7 +129,7 @@ body {
 .buttons {
   display: flex;
   justify-content: space-between;
-  margin-top: 150px;
+  margin-top: -10rem;
 }
 
 .buttons button {
@@ -151,7 +152,7 @@ body {
 
 /* Styling for the result section */
 .result {
-  margin-top: 20px;
+  margin-top: 45rem;
   text-align: center;
 }
 
