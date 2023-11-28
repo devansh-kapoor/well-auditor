@@ -133,12 +133,27 @@ const App = () => {
     setShowResult(true);
   };
 
+  const onChangePillar = (index) =>{
+    setCurrentPillarIndex(index)
+  }
+
   return (
     <>
     <Header/>
     <div className="App">
       <div className='background'>
       </div>
+      <div style={{display:"flex", flexDirection:"row"}}>
+        <div className='sideTab'>
+        {/* <h1 className="pillar-title">pillar</h1> */}
+          {pillarsData.map((item,index)=>(
+            <div>
+            <div className='pillarTab' onClick={()=> onChangePillar(index)}>
+            <h3>{item.title}</h3>
+            </div>
+            </div>
+          ))}
+        </div>
       {currentPillarIndex < pillarsData.length && !showResult ? (
         <div className="questionnaire">
           <h1 className="pillar-title">{pillarsData[currentPillarIndex].title}</h1>
@@ -182,7 +197,9 @@ const App = () => {
             </button>
           </div>
         </div>
+        
       ) : null}
+      </div>
       {showResult ? (
         <div className="result">
           <div style={{marginTop:"-20rem"}}>

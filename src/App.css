@@ -19,7 +19,7 @@ body {
 .App {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   height: auto;
   background-color: #f4f4f4;
@@ -52,6 +52,30 @@ body {
   z-index: 1;
   margin-top: 15rem;
   margin-bottom: 10rem;
+  margin-left: 5rem;
+}
+
+.sideTab {
+  /* background-color: #fff; */
+  padding: 37px;
+  border-radius: 18px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  /* max-width: 1200px; */
+  width: 16%;
+  z-index: 1;
+  margin-top: 30rem;
+  margin-bottom: 10rem;
+  margin-left: 6rem;
+  height: auto;
+}
+
+.pillarTab{
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  margin: 3px;
 }
 
 .pillar-title {
